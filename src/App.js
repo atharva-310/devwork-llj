@@ -8,33 +8,29 @@ import {
   Code,
   Grid,
   theme,
+  Container,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
-
+import {Navbar} from './components/Navbar'
+import Hero from './components/Hero';
+import PastPartner from './components/partners/PastPartner';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
+      <Box width={"100vw"} position="fixed" background={"white"}>
+      <Navbar />
       </Box>
+      <Box textAlign="center" fontSize="xl" bCK paddingTop="12vh">
+        <Hero />
+        {/* <PastPartner />
+        <Grid minH="100vh" backgroundColor={"#d5f3fe"}  >
+          
+          <ColorModeSwitcher justifySelf="flex-end" />
+          
+        </Grid> */}
+      </Box>
+      
     </ChakraProvider>
   );
 }
