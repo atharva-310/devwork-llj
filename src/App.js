@@ -2,35 +2,38 @@ import React from 'react';
 import {
   ChakraProvider,
   Box,
+  Flex,
   Text,
+  Heading,
   Link,
   VStack,
   Code,
   Grid,
   theme,
   Container,
+  Center,
+  Button,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
-import {Navbar} from './components/Navbar'
-import Hero from './components/Hero';
-import PastPartner from './components/partners/PastPartner';
+import './styles.css';
+// import { ColorModeSwitcher } from './ColorModeSwitcher';
+import Home from './components/home';
+import { Navbar } from './components/Navbar';
+// import Hero from './components/Hero';
+// import PastPartner from './components/partners/PastPartner';
+import AboutUs from './components/AboutUs';
+
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box width={"100vw"} position="fixed" background={"white"}>
-      <Navbar />
+      <Box>
+        <Box width={'100vw'} position="fixed" zIndex="99">
+          <Navbar />
+        </Box>
+        <Home />
+        <AboutUs />
+        <Box height="100vh"> </Box>
+        <Box height="300px"> dfksafkas;lk</Box>
       </Box>
-      <Box textAlign="center" fontSize="xl" bCK paddingTop="12vh">
-        <Hero />
-        {/* <PastPartner />
-        <Grid minH="100vh" backgroundColor={"#d5f3fe"}  >
-          
-          <ColorModeSwitcher justifySelf="flex-end" />
-          
-        </Grid> */}
-      </Box>
-      
     </ChakraProvider>
   );
 }

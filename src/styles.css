@@ -1,0 +1,18 @@
+
+#myVideo{
+    position: relative;
+    object-fit: cover;
+    object-position: bottom;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    /* min-height: 100%; */
+    max-height: 100vh;
+    z-index: 0;
+}
+@media (max-width: 1130px){
+    #myVideo {
+        width: auto;
+        height: 100%;
+    }
+}

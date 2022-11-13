@@ -22,6 +22,7 @@ import {
       <Flex
         w={'full'}
         h={'92vh'}
+        maxH={"800px"}
         
         // marginTop={["15px","28px"]}
         backgroundImage={
