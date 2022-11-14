@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/devwork-llj/static/css/main.a1228445.css",
-    "main.js": "/devwork-llj/static/js/main.114d5e29.js",
+    "main.js": "/devwork-llj/static/js/main.733c5488.js",
     "static/media/logo.png": "/devwork-llj/static/media/logo.7dbfacf46be5667699dd.png",
     "index.html": "/devwork-llj/index.html",
     "main.a1228445.css.map": "/devwork-llj/static/css/main.a1228445.css.map",
-    "main.114d5e29.js.map": "/devwork-llj/static/js/main.114d5e29.js.map"
+    "main.733c5488.js.map": "/devwork-llj/static/js/main.733c5488.js.map"
   },
   "entrypoints": [
     "static/css/main.a1228445.css",
-    "static/js/main.114d5e29.js"
+    "static/js/main.733c5488.js"
   ]
 }
