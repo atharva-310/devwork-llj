@@ -18,12 +18,25 @@ import {
 } from 'react-icons/fa';
 export default function AboutUs() {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
+  const isTab = useBreakpointValue({
+    base: false,
+    sm: false,
+    md: true,
+    lg: true,
+  });
   return (
-    <Box maxW="100vw" pt="80px" fontFamily="'Josefin Sans', sans-serif">
+    <Box
+      maxW="100vw"
+      overflowX="hidden"
+      pt="80px"
+      pb="80px"
+      fontFamily="'Josefin Sans', sans-serif"
+    >
       <Flex justifyContent="center" alignItems="center">
         <Flex
           flexWrap="wrap"
-          maxW="1400px"
+          // maxW="1400px"
+          maxWidth="90vw"
           width={['90vw', '90vw', '90vw', '90vw', '80vw']}
           pt="20px"
           pb="20px"
@@ -35,7 +48,7 @@ export default function AboutUs() {
             height="70%"
             // bg="red"
             p="10px"
-            minW="md"
+            // minW="md"
           >
             <HStack pb="5px">
               <FaMugHot color="#d2804b" />
@@ -76,9 +89,13 @@ export default function AboutUs() {
             width={isDesktop ? '50%' : '90%'}
             height="70%"
             wrap="wrap"
-            minW="md"
+            // minW="md"
           >
-            <Box width="50%" height="50%" p="10px">
+            <Box
+              width={isTab ? '50%' : '90%'}
+              height="50%"
+              p={isTab ? '20px' : '20px'}
+            >
               <FaCoffee fontSize="40px" color="#d2804b" />
               <Heading
                 fontFamily="'Josefin Sans', sans-serif"
@@ -93,7 +110,11 @@ export default function AboutUs() {
                 accusantium doloremque ladase.
               </Text>
             </Box>
-            <Box width="50%" height="50%" p="10px">
+            <Box
+              width={isTab ? '50%' : '90%'}
+              height="50%"
+              p={isTab ? '20px' : '20px'}
+            >
               <FaRegLemon fontSize="40px" color="#d2804b" />
               <Heading
                 fontFamily="'Josefin Sans', sans-serif"
@@ -108,7 +129,11 @@ export default function AboutUs() {
                 accusantium doloremque ladase.
               </Text>
             </Box>
-            <Box width="50%" height="50%" p="10px">
+            <Box
+              width={isTab ? '50%' : '90%'}
+              height="50%"
+              p={isTab ? '20px' : '20px'}
+            >
               <FaRegThumbsUp fontSize="40px" color="#d2804b" />
               <Heading
                 fontFamily="'Josefin Sans', sans-serif"
@@ -123,7 +148,11 @@ export default function AboutUs() {
                 accusantium doloremque ladase.
               </Text>
             </Box>
-            <Box width="50%" height="50%" p="10px">
+            <Box
+              width={isTab ? '50%' : '90%'}
+              height="50%"
+              p={isTab ? '20px' : '20px'}
+            >
               <FaSeedling fontSize="40px" color="#d2804b" />
               <Heading
                 fontFamily="'Josefin Sans', sans-serif"
